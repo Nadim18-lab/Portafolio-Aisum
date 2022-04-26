@@ -255,6 +255,12 @@ li{
     width: 300px;
     height: 300px;
     border: 10px solid #BB9DC4;
+    transition: all 05s ease;
+}
+
+.proyects img:hover{
+    width: 350px;
+    transform: rotate(360deg);
 }
 
 @media screen and (max-width:768px){
@@ -307,9 +313,14 @@ li{
     
 }
 
-.img_skill1 img,.img_skill2 img,.img_skill3 img,.img_skill4 img,.img_skill5 img,.img_skill6 img,.img_skill7 img{
+.skills img{
     border: 10px solid #BB9DC4;
     width: 300px;
+    transition: all 0.5s ease;
+}
+
+.skills img:hover{
+    transform:scale(1.1);
 }
 
 @media screen and (max-width:768px) {
