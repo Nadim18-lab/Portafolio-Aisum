@@ -309,7 +309,6 @@ nav ul{
 
 
 .skills_f h2{
-    width: 200px;
     padding-top: 10px;
     text-align: center;
 }
@@ -346,7 +345,35 @@ nav ul{
     }
 }
 
-.contact_me{
+.contact_meF{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top:20px ;
+}
+
+#contact_form{
+    background-color: #BB9DC4;
+    border-radius: 20px;
+    padding: 15px;
+
+}
+
+.sr-only{
+    
+}
+
+.form-control{
+    margin-top: 20px;
+}
+
+#button{
+    margin-top: 20px;
+}
+
+
+/* .contact_me{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -382,7 +409,7 @@ nav ul{
 
 .button:hover{
     background-color:#ba96c5;
-}
+} */
 
 .footer{
     background-color: black;
