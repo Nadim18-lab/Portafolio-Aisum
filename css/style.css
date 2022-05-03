@@ -381,13 +381,16 @@ li a:hover{
 
 }
 
-
 .form-control{
     margin-top: 20px;
 }
 
 #button{
     margin-top: 20px;
+}
+
+#contact_name:focus{
+    outline: none;
 }
 
 
