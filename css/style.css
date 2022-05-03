@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap');
 
 .back{
-    background:rgba(0, 0, 0, 0.2) url(./scr/multimedia/imagenes/fondo_inm.png);
+    background:rgba(0, 0, 0, 0.2) url(../scr/multimedia/imagenes/fondo_inm.png);
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
