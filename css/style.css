@@ -9,7 +9,7 @@
     background-blend-mode:darken;
 }
 
-#nav{
+/* #nav{
     top: 0;
     left: 0;
     width: 100%;
@@ -21,7 +21,7 @@
 
 #nav li {
     display: inline-block;
-}
+} */
 
 html{
     width: 100%;
@@ -96,7 +96,28 @@ h2{
     height: auto;
 }
 
-li a{
+nav{
+    background-color: #EEC8FA;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+}
+@media screen and(max-width:768){
+    .navbar-collapse{
+        justify-content: center;
+    }
+}
+
+@media screen and(max-width:820){
+    
+}
+@media screen and(max-width:1024){
+    
+}
+
+ li a{
     display: block;
     color:#7063D6;
     text-align: center;
@@ -104,19 +125,19 @@ li a{
     text-decoration: none;
     font-size: 20px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-}
+} 
 
 li a:hover{
     background-color: #BB9DC4;
 }
 
-nav ul{
+/* nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #EEC8FA;
-}
+} */
 
 
 .active{
@@ -360,9 +381,6 @@ nav ul{
 
 }
 
-.sr-only{
-    
-}
 
 .form-control{
     margin-top: 20px;
@@ -372,44 +390,6 @@ nav ul{
     margin-top: 20px;
 }
 
-
-/* .contact_me{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 400px;
-}
-
-.contact{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background:#6497ca;
-    font-family:'Roboto Mono', monospace;
-    width: 350px;
-}
-
-.contact label{
-    text-align: center;
-}
-
-.contact .text{
-    border: 5px solid #BB9DC4;
-    border-radius: 20px;
-    resize: none;
-}
-
-.contact .button{
-    
-    border: 5px solid #BB9DC4;
-    border-radius: 20px;
-    background-color:#EEC8FA;
-}
-
-.button:hover{
-    background-color:#ba96c5;
-} */
 
 .footer{
     background-color: black;
