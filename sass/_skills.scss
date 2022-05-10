@@ -1,0 +1,63 @@
+@use "../sass/mixins" as m;
+
+.skillsH{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 1rem;
+    padding-top: 5px;
+    img{
+        border: 10px solid #BB9DC4;
+        width: 300px;
+        transition: all 0.5s ease;
+    }
+    img:hover{
+        transform:scale(1.1);
+    }
+}
+
+.skills_f h2{
+    padding-top: 10px;
+    text-align: center;
+}
+
+@include m.telefono{
+    .skills{
+        justify-items: center;
+    }
+    .img_skill {
+        img{
+            border: 5px solid #BB9DC4;
+            width: 120px;
+        }
+    }
+}
+
+@include m.tablet{
+    .img_skill{
+        img{
+            border: 5px solid #BB9DC4;
+            width: 190px;
+        }
+    }
+    .skills{
+        justify-items: center;
+    }
+}
+
+@include m.desktop{
+    .img_skill{
+        img{
+            border: 5px solid #BB9DC4;
+            width: 190px;
+        }
+    } 
+    .skills{
+        justify-items: center;
+    }
+}

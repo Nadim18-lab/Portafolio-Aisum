@@ -1,0 +1,127 @@
+@use "../sass/mixins" as m;
+
+.back{
+    background:rgba(0, 0, 0, 0.2) url(../scr/multimedia/imagenes/fondo_inm.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    background-blend-mode:darken;
+}
+
+.back,.leaded h1{
+    text-decoration:underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    color:#6FE8DE;
+}
+
+.back,.leaded{
+    h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.4rem; 
+    }
+} 
+
+.about_mef{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.about_me{
+    padding-top: 3rem;
+    p{
+        font-family: 'Roboto Mono', monospace;
+        font-size: 15px;
+        background-color: #EEC8FA;
+        border-radius: 20px;
+        padding: 0.5rem;
+    }
+    .line{
+        display: inline-block;
+        width: 5rem;
+        height: 0.3rem;
+        background: #EEC8FA;
+        margin-top: 20px;
+    }
+}
+
+.me{
+    margin-left: 10px;
+    height: auto;
+    width: 300px;
+}
+
+.yo_img{
+    border: 10px solid #BB9DC4;
+    width: 300px;
+    justify-self: flex-end;
+}
+
+.social_m{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    img{
+        width: 60px;
+        cursor: pointer;
+        border-radius: 50px;
+        border: 5px solid #BB9DC4;
+    }
+    a{
+        cursor:default;
+    }
+}
+
+@include m.telefono{
+    .leaded h1{
+        font-size: 25px;
+    }
+    .back,.leaded h2{
+        font-size: 17px;
+    }
+    .yo_img{
+        display: none;
+    }
+    .about_mef{
+        flex-direction: column;
+    }
+    .about_me p{
+        font-size: 11px;
+    }
+    .social_m .facebook,.linkedin,.instagram {
+        width: 40px;
+    }
+    .social_m {
+        align-items:flex-end;
+        justify-content: center;
+    }
+    .me{
+        margin-left: 0px;
+    }
+}
+
+@include m.tablet{
+    .yo_img{
+        display: none;
+    }
+    
+}
+
+@include m.desktop{
+    .yo_img{
+        display: none;
+    }
+    .about_mef{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .me{
+        justify-self: center;
+    }
+}
