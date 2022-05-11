@@ -1,0 +1,39 @@
+@use "../sass/mixins" as m;
+
+
+nav{
+    background-color: #EEC8FA;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+}
+
+li a{
+    display: block;
+    color:#7063D6;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+} 
+
+li a:hover{
+    background-color: #BB9DC4;
+}
+
+.active{
+    background-color:#EEC8FA;
+}
+
+@include m.telefono{
+    #nav {
+        font-size: 20px;
+        ul{
+            text-align:left;
+        }
+        
+    }
+}
