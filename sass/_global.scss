@@ -14,8 +14,15 @@ body{
 
 .container_line {
     width: 100%;
-    display: flex;
+    display:flex;
     justify-content: center;
+    .line{
+        display: inline-block;
+        width: 50%;
+        height: 0.3rem;
+        background: #EEC8FA;
+        margin-top: 20px;
+    }
 }
 
 h1{
