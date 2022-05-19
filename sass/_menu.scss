@@ -6,14 +6,16 @@
     top: 0;
 }
 
-
-
 nav{
     background-color: #EEC8FA;
 }
 
-.menu{
+.menu.collapse.show{
     display: flex;
+    justify-content: center;
+}
+
+.menu.collapse{
     justify-content: flex-end;
 }
 
